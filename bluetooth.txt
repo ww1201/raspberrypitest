@@ -1,0 +1,16 @@
+安装蓝牙驱动，配置连接
+$sudo apt-get install pi-bluetooth bluez bluez-firmware blueman
+
+$sudo usermod -G bluetooth -a pi
+
+$sudo systemctl start bluetooth
+
+$sudo reboot
+
+$git clone https://github.com/bareinhard/super-simple-raspberry-pi-audio-receiver-install
+
+$cd super-simple-raspberry-pi-audio-receiver-install
+
+$git checkout stretch-fix
+
+$sudo ./install.sh
